@@ -11,7 +11,7 @@ namespace ReArrangeArray
             List<string> listToBeReArranged = new List<string>();
 
             Console.Write("Enter Values ( Separated by Space ) : ");
-            string input = Console.ReadLine();
+            string input = Console.ReadLine().Trim();
             string[] values = input.Split(' ');
             
             foreach (var value in values)
