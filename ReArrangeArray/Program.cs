@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ReArrangeArray
 {
@@ -6,7 +7,12 @@ namespace ReArrangeArray
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            List<string> listToBeReArranged = ReadValues.ReadArrayToReArrange();
+            int count = listToBeReArranged.Count;
+            Console.WriteLine("You have entered {0} values.", count);
+            Console.WriteLine("The maximum index is 6.");
+
+            ReadIndexAndArrange.ReadUserIndex(listToBeReArranged, count);
         }
     }
 }
