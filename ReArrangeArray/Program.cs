@@ -10,7 +10,7 @@ namespace ReArrangeArray
             List<string> listToBeReArranged = ReadValues.ReadArrayToReArrange();
             int count = listToBeReArranged.Count;
             Console.WriteLine("You have entered {0} values.", count);
-            Console.WriteLine("The maximum index is 6.");
+            Console.WriteLine("The maximum index is {0}.", count -1);
 
             ReadIndexAndArrange.ReadUserIndex(listToBeReArranged, count);
         }
